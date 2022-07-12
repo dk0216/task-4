@@ -94,7 +94,7 @@ function signout(){
 function getProducts_shop()
 {
     
-     axios.get(products_url)
+     get(products_url)
      .then(response => {
         console.log(`GET list products response`, response.data);
          createProductList(response.data);
@@ -484,4 +484,3 @@ function updateInventory() {
      })
      .catch(error => console.error(error));
 }
-

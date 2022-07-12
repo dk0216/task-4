@@ -79,6 +79,7 @@ function submitInfo(){
     var myTasks = returnToDo();
     myTasks.push(new Task);
     localStorage.setItem('myData',JSON.stringify(myTasks));
+    console.log('TEST submit info', JSON.stringify(myTasks));
     showMyTasks();
     myObj.hide();
 }
